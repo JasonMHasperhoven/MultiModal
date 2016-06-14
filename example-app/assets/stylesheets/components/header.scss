@@ -1,0 +1,37 @@
+.hero {
+  padding: $spacing * 3 $spacing * 4;
+  background: color(secondary);
+  text-align: center;
+
+  button {
+    @extend %button;
+
+    background: color(primary);
+    color: #fff;
+    font-size: 18px;
+    border-radius: $border-radius;
+    padding: 6px $spacing * 2;
+
+    &:hover,
+    &:focus {
+      background: color(primary, 600);
+    }
+  }
+}
+
+h1,
+h2 {
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: $spacing * 2;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: $spacing * 2;
+}

@@ -1,0 +1,79 @@
+/////////////////////////////////
+// Multi Modal - Classic Theme //
+/////////////////////////////////
+
+$multi-modal-z-index: 9001;
+$multi-modal-width: 320px;
+$multi-modal-border-radius: 3px;
+$multi-modal-box-shadow: 0 4px 16px rgba(0, 0, 0, .32);
+$multi-modal-background: #fff;
+$multi-modal-mobile-breakpoint: 767px;
+
+
+//////////////
+// Backdrop //
+//////////////
+
+$multi-modal-backdrop-color: #000;
+$multi-modal-backdrop-opacity: .75;
+
+
+//////////////////
+// Close button //
+//////////////////
+
+$multi-modal-close-color: #404040;
+$multi-modal-close-hover-color: #08c;
+$multi-modal-close-size: 20px;
+$multi-modal-close-area: 36px;
+$multi-modal-close-weight: 400;
+$multi-modal-close-top-spacing: 0;
+$multi-modal-close-right-spacing: 4px;
+
+
+////////////////
+// Fullscreen //
+////////////////
+
+$multi-modal-fullscreen-background: transparent;
+$multi-modal-fullscreen-opacity: 1;
+
+
+////////////
+// Header //
+////////////
+
+$multi-modal-header-font-size: 32px;
+$multi-modal-header-height: 64px;
+$multi-modal-header-font-weight: 300;
+$multi-modal-header-color: #363a3e;
+$multi-modal-header-text-align: center;
+$multi-modal-header-background: #f0f1f3;
+$multi-modal-header-border-bottom: 1px solid #dadada;
+
+
+//////////
+// Main //
+//////////
+
+$multi-modal-main-padding: 16px 24px;
+$multi-modal-main-background: #fff;
+
+
+/////////////
+// Content //
+/////////////
+
+$multi-modal-content-text-align: left;
+$multi-modal-content-font-size: inherit;
+$multi-modal-content-font-weight: inherit;
+$multi-modal-content-button-spacing: 16px;
+
+
+/////////////
+// Buttons //
+/////////////
+
+$multi-modal-button-alignment: right;
+$multi-modal-button-spacing: 16px;
+$multi-modal-button-only-child-width: 100%;

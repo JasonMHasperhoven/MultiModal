@@ -1,0 +1,27 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outFile": "multi-modal.js",
+    "module": "none",
+    "target": "es5"
+  },
+  "filesGlob": [
+    "**/*.ts",
+    "typings/browser.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "typings/main.d.ts",
+    "typings/main/**/*.d.ts",
+    "dist/**/*.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "files": [
+    "src/typescript/multi-modal.ts",
+    "typings/browser.d.ts",
+    "typings/browser/ambient/greensock/index.d.ts",
+    "typings/browser/ambient/jquery/index.d.ts"
+  ]
+}

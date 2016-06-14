@@ -1,0 +1,6 @@
+{
+  "ambientDependencies": {
+    "greensock": "registry:dt/greensock#1.15.1+20160316155526",
+    "jquery": "registry:dt/jquery#1.10.0+20160417213236"
+  }
+}

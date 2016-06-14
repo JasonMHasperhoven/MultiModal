@@ -1,0 +1,52 @@
+////////////
+// Button //
+////////////
+
+%button {
+  padding: 4px 24px;
+  border-radius: $border-radius;
+  display: inline-block;
+  vertical-align: middle;
+
+  overflow: hidden;
+  border: 0;
+
+  text-align: center;
+  white-space: nowrap;
+
+  cursor: pointer;
+  outline: 0;
+  user-select: none;
+  transition: all $transition-time;
+
+  &:active:not([disabled]) {
+    transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+    transition-duration: 72ms;
+    transition-timing-function: ease-out;
+  }
+
+  &[disabled] {
+    cursor: default;
+  }
+}
+
+.button {
+  @extend %button;
+}
+
+.button--primary {
+  background: color(primary);
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.button--secondary {
+  background: #fff;
+
+  &:active {
+    background: mix(#000, color(bg), 2%);
+  }
+}

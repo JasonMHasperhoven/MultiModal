@@ -1,0 +1,48 @@
+{
+  "name": "multi-modal",
+  "version": "0.0.1",
+  "description": "A modal window library with fancy animations which supports multiple modals and is mobile friendly.",
+  "main": "src/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TBA"
+  },
+  "keywords": [
+    "multi",
+    "multiple",
+    "modal",
+    "modals",
+    "dialog",
+    "dialogs",
+    "window",
+    "windows",
+    "animation",
+    "animations",
+    "mobile",
+    "typescript",
+    "javascript",
+    "tweenmax",
+    "gsap",
+    "jquery"
+  ],
+  "author": "Jason M. Hasperhoven <martijn.hasperhoven@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "csscomb": "^3.1.8",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sass-glob": "0.0.8",
+    "gulp-typescript": "^2.11.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uglifycss": "^1.0.5",
+    "merge-stream": "^1.0.0",
+    "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "gsap": "^1.18.2",
+    "jquery": "^2.2.0",
+    "typings": "^1.0.5"
+  }
+}

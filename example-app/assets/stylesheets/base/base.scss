@@ -1,0 +1,319 @@
+html {
+  position: relative;
+
+  box-sizing: border-box;
+  min-height: 100%;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: color(bg);
+
+  color: color(text);
+
+  &:before {
+    display: none;
+
+    @include mobile {
+      content: "mobile";
+    }
+    @include desktop {
+      content: "desktop";
+    }
+  }
+}
+
+html,
+input,
+textarea,
+button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+          font-smoothing: antialiased;
+}
+
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section,
+textarea {
+  display: block;
+}
+
+div,
+main,
+section,
+footer,
+form {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  background-color: transparent;
+
+  color: color(primary);
+
+  transition: all $transition-time;
+
+  &:hover {
+    color: color(primary, 300);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+
+  &, &:active, &:visited, &:hover {
+    text-decoration: none;
+
+    cursor: pointer;
+  }
+}
+
+pre,
+code {
+  border-radius: $border-radius;
+
+  font-family: "Menlo", Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+pre {
+  overflow: auto;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: $spacing;
+
+  text-align: left;
+  word-break: break-word;
+  word-spacing: normal;
+  white-space: pre;
+  white-space: pre-wrap;
+  tab-size: 4;
+  hyphens: none;
+
+  direction: ltr;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+img {
+  box-sizing: content-box;
+  border: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+
+  &:not(:root) {
+    overflow: hidden;
+  }
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+em {
+  font-weight: 600;
+  font-style: normal;
+}
+
+strong {
+  font-weight: 700;
+}
+
+
+///////////////////
+// Form elements //
+///////////////////
+
+button,
+input,
+select,
+optgroup,
+textarea {
+  margin: 0;
+
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+input, textarea {
+  outline: 0;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  cursor: pointer;
+
+  -webkit-appearance: button;
+}
+
+[readonly],
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+input {
+  line-height: normal;
+
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+input[type=text],
+input[type=tel],
+input[type=number],
+input[type=email],
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  margin: 0;
+
+  -webkit-appearance: none;
+}
+
+input[type=search] {
+  box-sizing: content-box;
+
+  -webkit-appearance: textfield;
+}
+
+input[type=text][disabled]
+input[type=email][disabled]
+input[type=password][disabled] {
+  -webkit-text-fill-color: color(text);
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 100px #fff;
+}
+
+textarea {
+  vertical-align: top;
+
+  overflow: auto;
+  resize: vertical;
+}
+
+::-webkit-input-placeholder {
+  color: color(text, 300);
+
+  -webkit-font-smoothing: antialiased;
+}
+
+:-moz-placeholder {
+  color: color(text, 300);
+
+  opacity: 1;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+::-moz-placeholder {
+  color: color(text, 300);
+
+  opacity: 1;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+:-ms-input-placeholder {
+  color: color(text, 300);
+
+  -webkit-font-smoothing: antialiased;
+}
+
+[hidden] {
+  display: none;
+}
