@@ -31,16 +31,6 @@ Comes with 2 Themes:
 
 #### Installation
 
-Using NPM:
-
-```bash
-npm install jquery --save
-npm install gsap --save
-npm install multimodal --save
-```
-
-or
-
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
@@ -52,15 +42,17 @@ or
 ### Usage
 
 ```javascript
-// Incase you are using the node package you will need this one line below:
-var MultiModal = require('multi-modal');
-
 var modal = new MultiModal({
   // default options
   closeButton: true
+
+  // if you are using the modern theme fullScreen should be true
+  // fullScreen: true
 });
 
+// Add even handlers
 $(document).click(function(event) {
+  // mandatory event handlers
   if ($(event.target).hasClass('js-modal-close')) {
     modal.close();
   }
@@ -69,6 +61,7 @@ $(document).click(function(event) {
     modal.closeAll();
   }
 
+  // custom event handlers
   if ($(event.target).hasClass('js-modal-toggle')) {
     modal.new({
       title: 'Multi Modal',
